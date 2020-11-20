@@ -10,20 +10,21 @@
 <body>
   <div class="container">
     <h1>Calculator</h1>
-    
-    <form id="add">
+    <!--This is where the magic happens -->
+    <form id="calculate"> 
       <div class="form-group">
-        <label for="add1">1st number:</label>
-        <input id="add1" class="form-control" type="text">
+        <label for="calculate1">1st number:</label> <!-- Text label on the page -->
+        <input id="calculate1" class="form-control" type="text">
       </div>
       <div class="form-group">
-        <label for="add2">2nd number:</label>
-        <input id="add2" class="form-control" type="text">
+        <label for="calculate2">2nd number:</label>
+        <input id="calculate2" class="form-control" type="text">
       </div>
-      <button type="submit" class="btn">add!</button>
-      <button type="submit" class="btn">subtract!</button>
-      <button type="submit" class="btn">multiply!</button>
-      <button type="submit" class="btn">divide!</button>
+      <!-- The above contains the two text boxes. -->
+      <button type="submit" id="add" class="btn">add!</button> <!-- Each button DOES display separately and properly, thank goodness -->
+      <button type="submit" id="sub" class="btn">subtract!</button>
+      <button type="submit" id="mul" class="btn">multiply!</button>
+      <button type="submit" id="div" class="btn">divide!</button>
     </form>
 
     <br>
