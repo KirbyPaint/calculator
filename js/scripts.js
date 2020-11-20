@@ -13,17 +13,7 @@ function multiply(number1, number2) {
 function divide(number1, number2) {
   return number1 / number2;
 }
-/*
-$(document).ready(function() {
-  $("form#calculate").submit(function(event) {
-   event.preventDefault();
-    const number1 = parseInt($("#calculate1").val());
-    const number2 = parseInt($("#calculate2").val());
-    const result = add(number1, number2);
-    $("#output").text(result);
-  });
-});
-*/
+
 // Works now for all functions but one button must be pressed before it will work
 
 $(document).ready(function() {
@@ -32,7 +22,7 @@ $(document).ready(function() {
     const number1 = parseInt($("#calculate1").val());
     const number2 = parseInt($("#calculate2").val());
 
-    $("#add").unbind().click(function() {
+    $("#add").unbind().click(function() { // Adding unbind() prevents it from returning exponentially.
       const result = add(number1, number2);
       $("#output").text(result);
       console.log(result);
